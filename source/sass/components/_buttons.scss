@@ -13,4 +13,10 @@
     width: fit-content;
     transition: all .2s ease-in-out;
     cursor: pointer;
+    text-decoration: none;
+    color: color('secondary', 600);
+    background-color: color('secondary', 100);
+    &:hover,&:focus{
+        background-color: color('primary', 100);
+    }
 }

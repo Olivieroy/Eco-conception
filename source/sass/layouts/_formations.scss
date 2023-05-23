@@ -1,0 +1,49 @@
+@use '../global' as *;
+
+.formations{
+    display: flex;
+    flex-direction: column;
+    &__wrapper{
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+        &>*:first-child{
+            width: 100%;
+        }
+        &>*{
+            min-width: 150px;
+        }
+    }
+    &__head{
+        background-color: color('primary', 50);
+        p{
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: color('secondary', 600);
+        }
+    }
+    &__list{
+        background-color: color('primary', 50);
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: color('secondary', 600);
+        &:first-child{
+            width: 100%;
+        }
+        &>*{
+            min-width: 150px;
+        }
+    }
+    &__item{
+        font-size: 1rem;
+        font-weight: 300;
+        color: color('secondary', 600);
+        background-color: white;
+        border-bottom: 1px solid color('secondary', 300);
+        &:hover,&:focus{
+            background-color: color('primary', 100);
+        }
+    }
+}
