@@ -3,11 +3,14 @@
 .header{
     background-color: white;
     border-bottom: 1px solid color('secondary', 200);
-    padding: 0 2rem;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
+    padding: 1rem 0;
+    .container{
+        max-width: none;
+    }
     nav{
         display: flex;
         gap: 2rem;
@@ -26,7 +29,8 @@
                 // text-decoration: none;
                 color: color('secondary', 600);
                 // font-weight: 600;
-                font-size: 1.8rem;
+                transition: all .2s ease-in-out;
+                font-size: 1.2rem;
                 &:hover, &:focus{
                     color: color('primary', 500);
                 }
@@ -34,8 +38,9 @@
         }
     }
     .logo{
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 600;
+        transition: all .2s ease-in-out;
         color: color('secondary', 800);
         text-decoration: none;
         &:hover, &:focus{

@@ -11,8 +11,19 @@
     <title>Web-Starter</title>
 </head>
 <body>
-    <header>
-        
+    <header class="header">
+        <div class="container flex-row">
+            <a href="index.php" class="logo">
+                Éco
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="formations.php">Formations</a></li>
+                    <li><a href="ressources.php">Ressources</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </nav> 
+        </div>
     </header>
 
     <?php include 'grid.php'; ?>
