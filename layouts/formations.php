@@ -4,7 +4,7 @@
             <p>Nom</p>
             <p>Niveau</p>
         </div>
-        <ul class="formations__list">
+        <ul id="formations__list" class="formations__list">
             <li class="">
                 <a href="#" class="formations__wrapper formations__item">
                     <p>Formations N°23</p>
