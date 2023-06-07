@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Oxygen:300,regular,700" rel="stylesheet" />
     <script src="dist/js/main.js" defer></script>
-    <title>Web-Starter</title>
+    <title>Eco-Formations</title>
 </head>
 <body>
     <header class="header">
@@ -26,6 +26,5 @@
         </div>
     </header>
 
-    <?php include 'grid.php'; ?>
 
     <main>
