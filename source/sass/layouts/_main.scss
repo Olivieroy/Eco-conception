@@ -1,5 +1,9 @@
 @use '../global' as *;
 
+html,body{
+    color: color('secondary', 800);
+    scroll-behavior: smooth;
+}
 hr{
     color: color('secondary', 100);
     height: 1px;
@@ -8,4 +12,16 @@ hr{
 
 .hidden{
     display: none;
+}
+
+.text-primary{
+    color: color('primary', 600);
+}
+
+.text-primary-300{
+    color: color('primary', 300);
+}
+
+.mb-4{
+    margin-bottom: 1rem;
 }

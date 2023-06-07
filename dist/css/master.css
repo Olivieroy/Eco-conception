@@ -266,6 +266,10 @@ img {
   height: 24px;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
 .layout {
   padding: 2rem 0;
   display: flex;
@@ -286,6 +290,11 @@ img {
   align-items: center;
 }
 
+html, body {
+  color: hsl(214.3, 32.6%, 16.9%);
+  scroll-behavior: smooth;
+}
+
 hr {
   color: hsl(216, 23.8%, 95.9%);
   height: 1px;
@@ -294,6 +303,18 @@ hr {
 
 .hidden {
   display: none;
+}
+
+.text-primary {
+  color: hsl(220, 91.2%, 40%);
+}
+
+.text-primary-300 {
+  color: hsl(220.1, 90.8%, 70%);
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .header {
@@ -414,6 +435,12 @@ fieldset {
   background-color: hsl(219.6, 92.2%, 90%);
 }
 
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding: 4rem 0;
+  }
+}
+
 .btn {
   padding: 1rem 1.25rem;
   display: flex;
@@ -429,6 +456,13 @@ fieldset {
 }
 .btn:hover, .btn:focus {
   background-color: hsl(219.6, 92.2%, 90%);
+}
+.btn.btn-primary {
+  background-color: hsl(220.1, 90.8%, 70%);
+  color: hsl(216, 23.8%, 95.9%);
+}
+.btn.btn-primary:hover, .btn.btn-primary:focus {
+  background-color: hsl(220.1, 90.8%, 30%);
 }
 
 .field {
@@ -482,6 +516,10 @@ select.field {
 [type=search].field {
   padding-left: 2.8rem;
   width: 100%;
+}
+
+.cta__item {
+  padding: 1rem 0;
 }
 
 .contain-grid {

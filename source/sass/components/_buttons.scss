@@ -19,4 +19,12 @@
     &:hover,&:focus{
         background-color: color('primary', 100);
     }
+
+    &.btn-primary{
+        background-color: color('primary', 300);
+        color: color('secondary', 100);
+        &:hover,&:focus{
+            background-color: color('primary', 700);
+        }
+    }
 }

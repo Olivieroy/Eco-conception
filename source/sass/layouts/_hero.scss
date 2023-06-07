@@ -1,0 +1,7 @@
+@use '../global' as *;
+
+.hero{
+    @media screen and (min-width: 1024px){
+        padding: 4rem 0;
+    }
+}

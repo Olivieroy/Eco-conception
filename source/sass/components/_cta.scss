@@ -4,9 +4,10 @@
 
 @use '../global' as *;
 
-
-
-
-
+.cta{
+    &__item{
+        padding: 1rem 0;
+    }
+}
 
 
