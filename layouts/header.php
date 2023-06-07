@@ -14,7 +14,7 @@
     <header class="header">
         <div class="container flex-row">
             <a href="index.php" class="logo">
-                Éco
+                Éco-Formations
             </a>
             <nav class="nav">
                 <ul>

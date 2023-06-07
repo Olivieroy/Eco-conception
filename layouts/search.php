@@ -26,30 +26,56 @@
                 <hr>
                 <div class="row">
                     <p><strong>Niveau d'étude visé</strong></p>
-                    <div>
-                        <input type="checkbox" name="niveau" id="bac" value="bac">
-                        <label for="bac" class="">Bac</label>
-                    
-                        <input type="checkbox" name="niveau" id="bac+2" value="bac+2">
-                        <label for="bac+2">Bac+2</label>
+                    <ul class="tags">
+                        <?php $levels = [
+                            [
+                                'value' => 'bac',
+                                'label' => 'Bac'
+                            ],
+                            [
+                                'value' => 'bac+2',
+                                'label' => 'Bac + 2'
+                            ],
+                            [
+                                'value' => 'bac+3',
+                                'label' => 'Bac + 3'
+                            ],
 
-                        <input type="checkbox" name="niveau" id="bac+3" value="bac+3">
-                        <label for="bac+3">Bac+3</label>
-                    </div>
+                        ] ?>
+                        <?php foreach ($levels as $level) : ?>
+                            <li>
+                                <input type="checkbox" name="level[]" id="level-<?= $level['value'] ?>" value="<?= $level['value'] ?>" class="hidden" >
+                                <label for="level-<?= $level['value'] ?>" class="tag" tabindex="0" role="button" aria-controls="#level-<? $level['value'] ?>"><?= $level['label'] ?></label>
+                            </li>
+                        <?php endforeach ?>
+                    </ul>
                 </div>
                 <hr>
                 <div class="row">
                     <p><strong>Type de formation</strong></p>
-                    <div>
-                        <input type="checkbox" name="niveau" id="bac" value="bac">
-                        <label for="bac" class="">Bac</label>
-                    
-                        <input type="checkbox" name="niveau" id="bac+2" value="bac+2">
-                        <label for="bac+2">Bac+2</label>
+                    <ul class="tags">
+                        <?php $levels = [
+                            [
+                                'value' => 'bac',
+                                'label' => 'Bac'
+                            ],
+                            [
+                                'value' => 'bac+2',
+                                'label' => 'Bac + 2'
+                            ],
+                            [
+                                'value' => 'bac+3',
+                                'label' => 'Bac + 3'
+                            ],
 
-                        <input type="checkbox" name="niveau" id="bac+3" value="bac+3">
-                        <label for="bac+3">Bac+3</label>
-                    </div>
+                        ] ?>
+                        <?php foreach ($levels as $level) : ?>
+                            <li>
+                                <input type="checkbox" name="level[]" id="level-<?= $level['value'] ?>" value="<?= $level['value'] ?>" class="hidden" >
+                                <label for="level-<?= $level['value'] ?>" class="tag" tabindex="0" role="button" aria-controls="#level-<? $level['value'] ?>"><?= $level['label'] ?></label>
+                            </li>
+                        <?php endforeach ?>
+                    </ul>
                 </div>
                 <hr>
                 <div class="row">
