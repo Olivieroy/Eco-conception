@@ -401,6 +401,9 @@ fieldset {
 .formations__wrapper > *:first-child {
   width: 100%;
 }
+.formations__wrapper > *:first-child:first-letter {
+  text-transform: capitalize;
+}
 .formations__wrapper > * {
   min-width: 150px;
 }
